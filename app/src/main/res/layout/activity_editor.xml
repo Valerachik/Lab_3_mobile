@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ccccff">
+    <TextView
+        android:id="@+id/textView"
+        android:text="Заповніть форму для створення власної піцци!"
+        android:textSize="29sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Назва піци" />
+
+    <EditText
+        android:id="@+id/etDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Діаметр (см)"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Вага (грами)"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ціна (грн)"
+        android:inputType="number"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/cbSpicy"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="Гостра піца"
+        app:thumbTint="#6666ff"
+        app:trackTint="#9999ff" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Зберегти"
+        android:backgroundTint="#33cc33"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
